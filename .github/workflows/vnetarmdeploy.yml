@@ -1,4 +1,4 @@
-name: Deploy ARM Template
+name: Deploy VNET ARM Template
 
 # Trigger the workflow on every push to the main branch
 on:
