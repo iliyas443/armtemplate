@@ -19,7 +19,7 @@ jobs:
     - name: Log into Azure
       uses: azure/login@v2
       with:
-        creds: ${{ secrets::AZURE_CREDENTIALS }}
+        creds: ${{ secrets::SERVICECONNECTION }}
 
     # Step 3: Deploy the ARM template
     - name: Deploy ARM Template
@@ -28,5 +28,5 @@ jobs:
         subscriptionId: '<YOUR_SUBSCRIPTION_ID>' # Replace with your sub ID
         resourceGroupName: '<YOUR_RESOURCE_GROUP_NAME>' # Replace with your RG name
         template: ./azuredeploy.json # Path to your ARM template file
+        parameters: ./azuredeploy.parameters.json 
         # Optional: uncomment below if you have a parameters file
-        # parameters: ./azuredeploy.parameters.json 
