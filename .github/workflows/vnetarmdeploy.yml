@@ -26,7 +26,7 @@ jobs:
       uses: azure/arm-deploy@v2
       with:
         subscriptionId: 'b11c94a3-8daf-4fed-bca5-0271ee4a3c4b' # Replace with your sub ID tenant b17d20d7-121c-424f-9265-8991c246ef59
-        resourceGroupName: '<YOUR_RESOURCE_GROUP_NAME>' # Replace with your RG name
+        resourceGroupName: 'VnetNpdRG' # Replace with your RG name
         template: ./vnettemplate.json # Path to your ARM template file
         parameters: ./vnetparameters.json 
         # Optional: uncomment below if you have a parameters file
