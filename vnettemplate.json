@@ -10,7 +10,7 @@
     },
     "vnetAddressPrefix": {
       "type": "string",
-      "defaultValue": "10.0.0.0/26",
+      "defaultValue": "10.0.0.0/27",
       "metadata": {
         "description": "Primary CIDR block for the VNet (64 total IP addresses)"
       }
@@ -26,19 +26,6 @@
       "defaultValue": "10.0.0.0/27",
       "metadata": {
         "description": "CIDR block for the first subnet (First 32 IP addresses)"
-      }
-    },
-    "subnet2Name": {
-      "type": "string",
-      "metadata": {
-        "description": "Name of the second subnet"
-      }
-    },
-    "subnet2Prefix": {
-      "type": "string",
-      "defaultValue": "10.0.0.32/27",
-      "metadata": {
-        "description": "CIDR block for the second subnet (Remaining 32 IP addresses)"
       }
     },
     "location": {
@@ -68,12 +55,6 @@
               "addressPrefix": "[parameters('subnet1Prefix')]"
             }
           },
-          {
-            "name": "[parameters('subnet2Name')]",
-            "properties": {
-              "addressPrefix": "[parameters('subnet2Prefix')]"
-            }
-          }
         ]
       }
     }
