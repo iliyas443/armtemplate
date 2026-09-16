@@ -6,7 +6,7 @@
       "value": "test-nemo-ase-preprod-eus2"
     },
     "vnetId": {
-      "value": "/subscriptions/b11c94a3-8daf-4fed-bca5-0271ee4a3c4b/resourceGroups/AzureVnetRG/providers/Microsoft.Network/virtualNetworks/npd-env-vnet"
+      "value": "/subscriptions/0f5dca24-bf1b-4380-b31c-903a124598d9/resourceGroups/Azure_TestRg_eus2/providers/Microsoft.Network/virtualNetworks/npd-env-vnet"
     },
     "location": {
       "value": "East US 2"
