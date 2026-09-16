@@ -6,19 +6,13 @@
       "value": "npd-env-vnet"
     },
     "vnetAddressPrefix": {
-      "value": "10.0.0.0/26"
+      "value": "10.0.0.0/27"
     },
     "subnet1Name": {
-      "value": "subnet-a"
+      "value": "default-0"
     },
     "subnet1Prefix": {
       "value": "10.0.0.0/27"
-    },
-    "subnet2Name": {
-      "value": "subnet-b"
-    },
-    "subnet2Prefix": {
-      "value": "10.0.0.32/27"
     }
   }
 }
