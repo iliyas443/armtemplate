@@ -3,16 +3,16 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "aseName": {
-      "value": "ASENAME"
+      "value": "test-nemo-ase-preprod-eus2"
     },
     "vnetId": {
-      "value": "id"
+      "value": "/subscriptions/b11c94a3-8daf-4fed-bca5-0271ee4a3c4b/resourceGroups/AzureVnetRG/providers/Microsoft.Network/virtualNetworks/npd-env-vnet"
     },
     "location": {
       "value": "East US 2"
     },
     "subnetName": {
-      "value": "SUBNETNAME"
+      "value": "default-0"
     },
     "kind": {
       "value": "ASEV3"
