@@ -17,14 +17,14 @@ jobs:
     - name: Log into Azure
       uses: azure/login@v2
       with:
-        creds: ${{ secrets.NEWSERVICECONNECTION }}
+        creds: ${{ secrets.AZURE_TEST_CONNECTION }}
 
     # Step 3: Deploy the ARM template
     - name: Deploy ARM Template
       uses: azure/arm-deploy@v2
       with:
-        subscriptionId: 'b11c94a3-8daf-4fed-bca5-0271ee4a3c4b' # Replace with your sub ID tenant b17d20d7-121c-424f-9265-8991c246ef59
-        resourceGroupName: 'AzureVnetRG' # Replace with your RG name
+        subscriptionId: '0f5dca24-bf1b-4380-b31c-903a124598d9' # Replace with your sub ID tenant b17d20d7-121c-424f-9265-8991c246ef59
+        resourceGroupName: 'Azure_TestRg_eus2' # Replace with your RG name
         template: ./vnettemplate.json # Path to your ARM template file
         parameters: ./vnetparameters.json 
         # Optional: uncomment below if you have a parameters file
